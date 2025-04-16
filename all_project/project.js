@@ -10,7 +10,6 @@ el_moon.onclick = ()=> {
 
 el_body.className = localStorage.getItem("light");
 
-
 // =================================[cursor]=======================================
 let el_inner_cursor = document.querySelector('.inner_cursor');
 let el_outer_cursor = document.querySelector('.outer_cursor');
@@ -20,7 +19,7 @@ document.addEventListener('mousemove', moveCursor);
 function moveCursor(e) {
     let x = e.clientX;
     let y = e.clientY;
-    
+
     el_inner_cursor.style.left = `${x}px`;
     el_inner_cursor.style.top = `${y}px`;
     el_outer_cursor.style.left = `${x}px`;
