@@ -1,6 +1,6 @@
-let el_nav = document.querySelectorAll("nav a");
-let el_section_container = document.querySelectorAll("section");
-let bg_active = document.querySelectorAll(".bg");
+let el_nav = document.querySelectorAll('nav a');
+let el_section_container = document.querySelectorAll('section');
+let bg_active = document.querySelectorAll('.bg');
 let el_home__article = document.querySelectorAll('.home__article');
 let el_btn = document.querySelector('.btn');
 
@@ -19,7 +19,7 @@ el_nav.forEach((link, index)=> {
             el_nav[3].classList.add("active");
             el_section_container[3].classList.add("active");
             bg_active[3].classList.add("active");
-        })  
+        })
     })
     // =========================
     el_btn.addEventListener("click", ()=> {
@@ -27,7 +27,7 @@ el_nav.forEach((link, index)=> {
         el_nav[4].classList.add("active");
         el_section_container[4].classList.add("active");
         bg_active[4].classList.add("active");
-    })  
+    })
 })
 
 function remove() {
@@ -73,7 +73,7 @@ document.addEventListener('mousemove', moveCursor);
 function moveCursor(e) {
     let x = e.clientX;
     let y = e.clientY;
-    
+
     el_inner_cursor.style.left = `${x}px`;
     el_inner_cursor.style.top = `${y}px`;
     el_outer_cursor.style.left = `${x}px`;
@@ -127,7 +127,7 @@ el_certificate__close.forEach((el, num)=> {
 
 let swiper_home = new Swiper('.home__swiper', {
     loop: true,
-    spaceBetween: -24, 
+    spaceBetween: -24,
     grabCursor: true,
     slidesPerView: 'auto',
     centeredSlides: 'auto',
